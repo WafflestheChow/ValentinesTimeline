@@ -5,7 +5,7 @@ import Gallery from './Gallery';
 interface MonthCardProps {
   month: MonthEntry;
   galleryId: string;
-  onOpenLightbox: (monthKey: string, startIndex: number) => void;
+  onOpenLightbox: (monthKey: MonthEntry['key'], startIndex: number) => void;
   onViewGallery: (galleryId: string) => void;
   reducedMotion: boolean;
 }
